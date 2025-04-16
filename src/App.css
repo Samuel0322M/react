@@ -27,10 +27,56 @@
     border-radius: 1000px;
 }
 
-.tw-followCard-header-button {
+.tw-followCard-button {
+    cursor: pointer;
     margin-left: 16px;
     border: 0;
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
 }
+
+.tw-followCard-button:hover {
+    background-color: rgb(30, 9, 151);
+    transition: .3s ease background-color;
+}
+
+.tw-followCard-button-following {
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+
+.tw-followCard-button-following {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #bbb;
+    width: 140px;
+}
+
+.tw-followCard-button:hover {
+    opacity: .8s;
+}
+
+.tw-followCard-button-following:hover {
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+}
+
+.tw-followCard-button-following:hover .tw-followCard-text {
+    display: none;
+}
+
+.tw-followCard-stopfollowing {
+    display: none;
+}
+
+.tw-followCard-button-following:hover .tw-followCard-stopfollowing {
+    display: block;   
+}
+
+
